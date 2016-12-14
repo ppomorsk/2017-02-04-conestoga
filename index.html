@@ -9,11 +9,11 @@ language: en
 latlng: 43.389485,-80.404178 
 humandate: February 4-5, 2016 
 humantime: 10:00 am - 4:30 pm 
-startdate: 2016-02-04 
-enddate: 2016-02-05 
-instructor: ["Ivana Kajić", "Pawel Pomorski", "Tyson Whitehead"] 
-helper: ["Rui Geng", "Emmanuel Santos"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: ["ddvorski@conestogac.on.ca","ppomorsk@sharcnet.ca"]  
+startdate: 2017-02-04 
+enddate: 2017-02-05 
+instructor: ["Pawel Pomorski", "Tyson Whitehead"] 
+helper: ["Rui Geng", "Ivana Kajić", "Emmanuel Santos"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: ["ddvorski@conestogac.on.ca"]  
 etherpad:             # optional: URL for the workshop Etherpad if there is one
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
@@ -81,7 +81,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 -->
 <p id="who">
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  The course is aimed at students, researchers, and faculty members.
   <strong>You don't need to have any previous knowledge of the tools that will
     be presented at the workshop.</strong>
 </p>
@@ -150,21 +150,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 -->
 <p id="contact">
   <strong>Contact</strong>:
-  Please email
-  {% if page.contact %}
-    {% for contact in page.contact: %}
-      {% if forloop.last and page.contact.size > 1 %}
-        or
-      {% else %}
-        {% unless forloop.first %}
-        ,
-        {% endunless %}
-      {% endif %}
-      <a href='mailto:{{contact}}'>{{contact}}</a>
-    {% endfor %}
-  {% else %}
-    to-be-announced
-  {% endif %}
+  Please email the organizer, Dalibor Dvorski, at <a href="mailto:ddvorski@conestogac.on.ca">ddvorski@conestogac.on.ca</a>
   for more information.
 </p>
 
